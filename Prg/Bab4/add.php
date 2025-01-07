@@ -32,7 +32,7 @@
              <td colspan="3">
                 <input type="submit" value="INSERT">
                 <input type="reset" value="BATAL">
-                <?php echo "\t [<a href=view.php>Lihat Data Siswa</a>]"; ?>
+                <?php echo "\t [<a href=index.php>Lihat Data Siswa</a>]"; ?>
              </td>
          </tr>   
       </table>

@@ -18,7 +18,7 @@ if($koneksi){
    $SEX= $_POST['rdoseks'];
 
    $SQL = "UPDATE pegawai SET Nama='$NAMA', Umur='$UMUR', Seks='$SEX' WHERE Nip='$NIPH'";
-   mysql_query($SQL, $koneksi) or die ("Proses pembaharuan data GAGAL! <br> [<a href=index.php>Lihat Data Pegawai</a>]");
+   mysql_query($SQL, $koneksi) or die ("Proses pembaharuan data GAGAL! <br> [<a href=view.php>Lihat Data Pegawai</a>]");
    
    echo "Pegawai dengan NIP = $NIPH BERHASIL DIPERBAHARUI!";
    echo "<br>";

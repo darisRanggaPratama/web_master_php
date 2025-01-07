@@ -8,7 +8,9 @@ $password = "rangga";
 $connect = mysqli_connect($server, $username, $password, $database);
 
 // Mengecek koneksi
-if (!$connect){
+if (!$connect) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
+
+
 ?>

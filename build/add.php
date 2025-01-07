@@ -81,7 +81,7 @@
                 <input type="submit" value="INSERT">
                 <INPUT type="reset" value="CANCEL">
                 <?php
-                echo "\t[<a href=view.php>VIEW DATA SISWA</a>]";
+                echo "\t[<a href=index.php>VIEW DATA SISWA</a>]";
                 ?>
             </td>
         </tr>

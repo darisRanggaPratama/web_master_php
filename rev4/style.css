@@ -1,0 +1,128 @@
+/* Animasi untuk efek terbakar */
+@keyframes burn {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+        background: linear-gradient(45deg, #fff 0%, #ffe 100%);
+        transform: scale(1);
+        opacity: 1;
+    }
+    33% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        background: linear-gradient(45deg, #ffd 0%, #f90 100%);
+        transform: scale(0.97);
+        opacity: 0.8;
+    }
+    66% {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        background: linear-gradient(45deg, #f90 0%, #f00 100%);
+        transform: scale(0.93);
+        opacity: 0.5;
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+        background: linear-gradient(45deg, #f00 0%, #000 100%);
+        transform: scale(0.9);
+        opacity: 0;
+    }
+}
+
+/* Styling untuk tabel dan efek hover */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.table thead th {
+    border: none;
+    background: #f8f9fa;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.table tbody td {
+    border: none;
+    background: white;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.table tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.table tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Class untuk efek terbakar */
+.burning {
+    animation: burn 1s ease-in forwards;
+    pointer-events: none;
+}
+
+/* Styling untuk tombol */
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-sm {
+    padding: 5px 10px;
+}
+
+/* Styling untuk modal */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+/* Styling untuk form */
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.15);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}

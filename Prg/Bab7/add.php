@@ -2,7 +2,7 @@
 session_start();
 //periksa apakah user telah login atau memiliki session
 if(!isset($_SESSION['user']) || !isset($_SESSION['passwd'])) {
-?><script language=’javascript’>alert('Anda belum login. Please login dulu' );
+?><script language=ï¿½javascriptï¿½>alert('Anda belum login. Please login dulu' );
 document.location='login.php'</script><?
 } else {
 ?>
@@ -46,7 +46,7 @@ body {
            <td colspan="3">
                 <input type="submit" value="INSERT">
                 <input type="reset" value="BATAL">
-             <?php echo "\t [<a href=view.php>Lihat Data Siswa</a>]"; ?></td>
+             <?php echo "\t [<a href=index.php>Lihat Data Siswa</a>]"; ?></td>
          </tr>   
       </table>
    </form>
