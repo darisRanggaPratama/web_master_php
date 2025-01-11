@@ -22,16 +22,18 @@ function loadData() {
                     row.dataset.nis = student.Nis; // Menambahkan data-nis attribute
                     row.innerHTML = `
                         <td>${index + 1}</td>
+                        <td>
+                         <button class="btn btn-sm btn-primary me-2" onclick="showEditModal('${student.Nis}', '${student.Nama}', ${student.Umur}, '${student.Seks}')">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
                         <td>${student.Nis}</td>
                         <td>${student.Nama}</td>
                         <td>${student.Umur}</td>
                         <td>${student.Seks}</td>
-                        <td>
-                            <button class="btn btn-sm btn-primary me-2" onclick="showEditModal('${student.Nis}', '${student.Nama}', ${student.Umur}, '${student.Seks}')">
-                                <i class="bi bi-pencil"></i> Edit
-                            </button>
+                        <td>                           
                             <button class="btn btn-sm btn-danger" onclick="handleDelete('${student.Nis}')">
-                                <i class="bi bi-trash"></i> Drop
+                                <i class="bi bi-trash"></i>
                             </button>
                         </td>
                     `;
@@ -256,7 +258,7 @@ function handleDownload() {
                     const url = window.URL.createObjectURL(blob);
                     const a = document.createElement('a');
                     a.href = url;
-                    a.download = `students_${new Date().toISOString().slice(0,10)}.csv`;
+                    a.download = `students_${new Date().toISOString().slice(0, 10)}.csv`;
                     document.body.appendChild(a);
                     a.click();
                     window.URL.revokeObjectURL(url);

@@ -1,0 +1,154 @@
+body {
+	background-color:white;
+	background:url(images/motif.png) repeat-x repeat-y;
+	margin:0;
+	font:arial;
+	font-size:12px;
+}
+
+* 									{ margin: 0; padding: 0; }
+
+a, a:hover, a:visited, a:visited:hover {
+	text-decoration:none;
+}
+
+#topmenuwrapper {
+	background-color:white;
+	background:url(images/motif.png) repeat-x repeat-y;
+	height:24px;
+}
+
+ul									{ list-style: none; margin:0px;}
+p                                   { margin: 15px 0; }
+
+h1 {
+	color:white;
+}
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; }
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; background: #ccc; }
+ul.dropdown a:hover		            { color: #fff; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display: block; padding: 4px 8px; border-right: 1px solid #333;
+	 								  color: #222; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #4991F1; color: white; position: relative; }
+ul.dropdown li.hover a              { color: black; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 250px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: #f6f6f6; color: #000; 
+									  border: 1px solid #ccc; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+#loading 							{ background: url(images/load.gif) no-repeat;display:none; }
+			
+#content 							{ font-family:arial;font-size:11px;margin:20px;	}		
+
+a.button, a.button:visited {
+	text-decoration:none;
+	background-color:#D6E9FF;
+	border:1px solid #A9D3F3;
+	width:638px;
+	margin-top:5px;
+	padding: 5px 0px;
+	float:left;
+	outline:0;
+	font-weight:bold;
+	color:#2C4D66;
+}
+a.button:hover, a.button:visited:hover, a.button:active {
+	color:#F9FDFF;
+	background-color:#444E8F;
+	border:1px solid #245578;
+}
+#addgmd {
+	background-color:#F3F8FF;
+	border:1px solid #A9D3F3;
+	width:638px;
+	float:left;
+}
+#addgmd .formadd{
+	margin:10px;
+	text-size:9px;
+}
+#notgmd {
+	background-color:#F3F8FF;
+	border:1px solid #A9D3F3;
+	width:638px;
+	float:left;
+}
+
+form br {
+	clear:left;
+}
+form label, input, select, textarea {
+	float:left;
+	margin-bottom:10px;
+}
+form label {
+	text-align:left;
+	width:100px;
+}
+form .new label, input, select, textarea{
+	float: none;
+}
+
+.footermenu {
+	color: #BDC0C5;
+	position: absolute;
+	font-size: 11px;
+	margin-top: 7px;
+	margin-left: 10px;
+}
+
+.footermenu ul{
+	margin : 0;
+	padding : 0;
+}
+
+.footermenu ul li{
+	display : inline;
+	margin : 0 ;
+}
+
+.footermenu ul li a{
+	text-decoration: none;
+	color: #BDC0C5;
+	padding : 2px 5px;
+}
+
+.footermenu ul li a:hover, .footermenu ul li a:active, .footermenu ul li a:focus {
+	background-color: #333333;
+	outline: none;
+	color: white;
+}
+
+#kolom1 {
+	width:300px;
+	float:left;	
+}
+#kolom2 {
+	width:300px;
+	float:left;
+	margin-left:10px;	
+}
+#kolom3 {
+	width:300px;
+	float:left;
+	margin-left:10px;	
+}

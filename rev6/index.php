@@ -21,8 +21,13 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <li>
-                            <button class="btn btn-secondary" onclick="location.href = 'searching.php';">
+                            <button class="btn btn-primary" onclick="location.href = 'searching.php';">
                                 <i class="bi bi-search"></i> Searching
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-secondary" onclick="location.href = 'browsing.php';">
+                                <i class="bi bi-exposure"></i> Updating
                             </button>
                         </li>
                         <li>
@@ -43,7 +48,7 @@
                             <input type="file" id="csvUpload" accept=".csv" style="display: none">
                         </li>
                         <li>
-                            <button class="btn btn-info" onclick="handleDownload()">
+                            <button class="btn btn-warning" onclick="handleDownload()">
                                 <i class="bi bi-download"></i> G e t CSV
                             </button>
                         </li>
@@ -57,11 +62,12 @@
                     <thead class="table-dark">
                     <tr>
                         <th>No</th>
+                        <th>Edit</th>
                         <th>NIS</th>
                         <th>Nama</th>
                         <th>Umur</th>
-                        <th>Jenis Kelamin</th>
-                        <th>Aksi</th>
+                        <th>Gender</th>
+                        <th>Drop</th>
                     </tr>
                     </thead>
                     <tbody id="studentTableBody"></tbody>
